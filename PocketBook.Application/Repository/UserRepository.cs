@@ -1,13 +1,10 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
-using PocketBook.Core.IRepositories;
-using PocketBook.Data;
-using PocketBook.Model;
 
-namespace PocketBook.Core.Repository
+using Microsoft.EntityFrameworkCore;
+using PocketBook.Application.IRepositories;
+using PocketBook.Domain;
+using PocketBook.Infrastructure;
+
+namespace PocketBook.Application.Repository
 {
     public class UserRepository : GenericRepository<User>, IUserRepository
     {

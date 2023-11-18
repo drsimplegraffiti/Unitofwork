@@ -1,8 +1,9 @@
+
 using System.Linq.Expressions;
 
-namespace PocketBook.Core.IRepositories;
-
-public interface IGenericRepository<T> where T : class
+namespace PocketBook.Application.IRepositories
+{
+    public interface IGenericRepository<T> where T : class
 {
     Task<IEnumerable<T>> All();
     Task<T> GetById(Guid id);
@@ -11,4 +12,5 @@ public interface IGenericRepository<T> where T : class
     Task<bool> Upsert(T entity);
     Task<IEnumerable<T>> Find(Expression<Func<T, bool>> predicate);
 
+}
 }

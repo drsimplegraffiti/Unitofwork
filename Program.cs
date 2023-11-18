@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-using PocketBook.Core.IConfiguration;
-using PocketBook.Data;
+using PocketBook.Application.IConfiguration;
+using PocketBook.Infrastructure;
+
 
 var builder = WebApplication.CreateBuilder(args);
 

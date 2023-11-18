@@ -1,11 +1,13 @@
+
+
 using System.Linq.Expressions;
 using Microsoft.EntityFrameworkCore;
-using PocketBook.Core.IRepositories;
-using PocketBook.Data;
+using PocketBook.Application.IRepositories;
+using PocketBook.Infrastructure;
 
-namespace PocketBook.Core.Repository;
-
-public class GenericRepository<T>: IGenericRepository<T> where T: class
+namespace PocketBook.Application.Repository
+{
+   public class GenericRepository<T>: IGenericRepository<T> where T: class
 {
     protected ApplicationDbContext context;
     internal DbSet<T> dbSet;
@@ -69,4 +71,5 @@ public class GenericRepository<T>: IGenericRepository<T> where T: class
     {
         return await dbSet.Where(predicate).ToListAsync();
     }
+}
 }

@@ -1,0 +1,5 @@
+- dotnet new sln -n PocketBook // Create a new solution
+- dotnet new classlib -n PocketBook.Domain // holds all the domain models e.g. User, Book, etc.
+- dotnet new classlib -n PocketBook.Infrastructure // holds all the infrastructure models e.g. Database, Email, etc.
+- dotnet new classlib -n PocketBook.Application // holds all the application models e.g. Services, Repositories, etc.
+- dotnet new webapi -n PocketBook.API // holds all the API models e.g. Controllers, etc.

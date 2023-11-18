@@ -1,9 +1,10 @@
+
 using Microsoft.EntityFrameworkCore;
-using PocketBook.Model;
+using PocketBook.Domain;
 
-namespace PocketBook.Data;
-
-public class ApplicationDbContext: DbContext
+namespace PocketBook.Infrastructure
+{
+   public class ApplicationDbContext: DbContext
 {
     public virtual DbSet<User> Users { get; set; }
 
@@ -16,4 +17,5 @@ public class ApplicationDbContext: DbContext
     {
         base.OnModelCreating(modelBuilder);
     }
+}
 }
