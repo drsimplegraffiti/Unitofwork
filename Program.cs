@@ -12,6 +12,8 @@ builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddDatabaseDeveloperPageExceptionFilter(); // AddDatabaseDeveloperPageExceptionFilter is used to show the error page in development mode
 
+
+builder.Services.AddHttpClient();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
 
