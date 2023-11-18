@@ -84,7 +84,7 @@ namespace PocketBook.Controllers
 }
 ```
 
-Use Named Instances of HttpClientFactory in ASP.NET Core
+##### Use Named Instances of HttpClientFactory in ASP.NET Core
 In Program.cs
 ```csharp
 
@@ -122,7 +122,7 @@ public class NamedClientController : Controller
 ```
 
 
-Use Typed Clients in ASP.NET Core
+##### Use Typed Clients in ASP.NET Core
 In ExternalApiClient.cs
 ```csharp
 public class ExternalApiClient
